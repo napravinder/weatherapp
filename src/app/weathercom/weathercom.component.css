@@ -1,0 +1,68 @@
+.main{
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    margin:-4px;
+}
+.city{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.input-group{
+    margin-top: 5px;
+    margin-bottom:5px;
+   
+}
+.input-control{
+    width: 100%;
+    padding: 5px;
+}
+.btn{
+        width:30% ;
+        background-color: rgb(8, 51, 116);
+        color: white;
+        border:none;
+        padding: 10px;
+        border-radius: 5px;
+}
+.heading{
+    width: 100%;
+    background-color: rgb(8, 51, 116);
+    height: 50px;
+    padding-top: 1px;
+    padding-bottom:10px;
+    text-align: center;
+}
+.heading >h4{
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+}
+.details{
+    background-color: rgb(8, 51, 116);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: grey;
+    margin-top: 5px;
+    
+    
+}
+ul{
+    list-style: none;
+    padding-left: 2px;
+    color: honeydew;
+}
+li{
+    padding: 10px 5px;
+    border-bottom: 1px solid honeydew;
+}
+.footer{
+    position: fixed;
+    height: 50px;
+    width: 98%;
+    background-color: rgb(8, 51, 116);;
+    bottom: 3px;
+   
+}

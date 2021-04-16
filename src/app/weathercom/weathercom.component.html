@@ -1,0 +1,40 @@
+<div class="main">
+    <div class="heading">
+        <h4>Weather Info</h4>
+    </div>
+    <div class="city">
+        <form
+        [formGroup]="SearchForm" (ngSubmit)="getData(SearchForm.value)">
+        <div class="input-group">
+            <label for="weatherCity">Enter city name:</label>
+          <input class="input-control" type="text" id="weatherCity"  aria-describedby="weatherCity" 
+          placeholder="Please city"
+          formControlName="city" required />
+        </div>
+        <div class="input-group">
+          <button type="submit" class="btn">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="details">
+        <h4 style="text-align: center; color:honeydew;">Weather Details</h4>
+            <ul>
+                <li>City Name: <b>{{this.wData?.name}}</b></li>
+                <li>Temperature value: <b>{{this.wData?.main.temp}}</b></li>
+                <li>Temperature Min: <b>{{this.wData?.main.temp_min}}</b></li>
+                <li>Temperature Max: <b>{{this.wData?.main.temp_max}}</b></li>
+                <li>Latitude: <b>{{this.wData?.coord.lon}}</b></li>
+                <li>Longitude: <b>{{this.wData?.coord.lat}}</b></li>
+            </ul>
+    </div>
+    <div class="footer">
+        <p style="float: left;padding: 5px 10px;color: honeydew;">Name: <b>Manpreet Singh</b></p>
+        <p style="float: right;padding: 5px 10px;color: honeydew;">Number: <b>+91 93501 06263</b> </p>
+    </div>
+</div>
+
+
+
